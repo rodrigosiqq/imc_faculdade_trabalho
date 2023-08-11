@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Calc IMC</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Bem vindo ao Calc IMC</h1>
+        <h3>Em algums passos simples você <br> pode calcular seu índice de maca corpórea</h3>
+    </div>
+    <div class="form">
+
+        <form method="POST" action="/CalcIMC">
+            <h3>Digite o seu Peso:</h3>
+            <input type="text" name="peso" id="peso">
+            <h3>Digite a sua altura:</h3>
+            <input type="text" name="altura" id="altura">
+            <br>
+            <button class="button" type="submit">
+                enviar 
+            </button>
+        </form>
+
+    </div>
+    {% if result %}
+    <div>
+        <hr>
+        <h3>Seu IMC é {{ result.imc }}</h3>
+        <hr>
+        <h3>{{ result.msg }}</h3>
+        <hr>
+    </div>
+    {% endif %}
+    <br>
+    <button <a href="/"></a>Retornar</button>
+</body>
+</html>

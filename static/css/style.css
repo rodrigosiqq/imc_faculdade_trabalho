@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(137, 43, 226, 0.356);
+    background-position: cover;
+    background-repeat: no-repeat;
+    font-style: oblique;
+    text-align: center;
+}
+
+.header{
+    background-color: darkgrey;
+    border-color: black blue;
+    border-radius: 50px;
+}
+
+.form{
+    size: 25px;
+    box-shadow: 60%;
+    font-size: medium;
+}
+
+input {
+    border: 2px solid blue; /* Substitua 'blue' pela cor desejada */
+    size: 25%;
+  }
+
+  .button{
+    background-color: cadetblue;
+    border-radius: 65%;
+  }
