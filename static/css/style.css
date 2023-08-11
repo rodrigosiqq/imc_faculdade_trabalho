@@ -17,13 +17,29 @@ body{
     box-shadow: 60%;
     font-size: medium;
 }
+.return{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b3b3b3; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 input {
     border: 2px solid blue; /* Substitua 'blue' pela cor desejada */
     size: 25%;
   }
 
+
   .button{
+    padding: 10px 20px;
     background-color: cadetblue;
     border-radius: 65%;
   }
+
+
+
+  

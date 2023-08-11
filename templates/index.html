@@ -13,13 +13,13 @@
     </div>
     <div class="form">
 
-        <form method="POST" action="/CalcIMC">
+        <form method="POST" action="/CalcIMC" onsubmit="return verificarForm();">
             <h3>Digite o seu Peso:</h3>
             <input type="text" name="peso" id="peso">
             <h3>Digite a sua altura:</h3>
             <input type="text" name="altura" id="altura">
             <br>
-            <button class="button" type="submit">
+            <button  class="return" type="submit">
                 enviar 
             </button>
         </form>
@@ -35,6 +35,20 @@
     </div>
     {% endif %}
     <br>
-    <button <a href="/"></a>Retornar</button>
+    <br>
+    <a class="return" href="/">Retornar</a>
+
+    <script>
+        function verificarForm(){
+            let peso = document.getElementById("peso").value;
+            let altura = document.getElementById("altura").value;
+
+            if(peso === '' || altura === ''){
+                alert('você precisa fornecer os dados solicitados!');
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
